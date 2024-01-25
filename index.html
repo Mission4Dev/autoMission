@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>AUTOMISSION</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+        <div class="cercle"></div>
+      <header>
+        <a href="#">
+          <img src="Media/Logo1.png" class="logo" />
+        </a>
+      </header>
+      <div class="container">
+        <div class="texte">
+            <h2>Spécialiste véhicules <span> Sportifs & Luxueux</span></span></h2>
+            <p>Achat, vente et conseil de tout véhicule luxueux, sportifs grâce à une équipe de professionnnels. Faire confiance à AUTOMISSION, c'est l'assurance d'un suivi et service de qualité haut de gamme</p>
+            <a href="mailto:contact@automission.com">Nous contacter</a>
+        </div>
+        <div class="imgBox">
+            <img src="Media/Lambor.png" class="Lambor">
+        </div>
+      </div>
+      <ul class="catalogue">
+          <li><img src="Media/Lambor.png" onclick="imgSlider('Media/Lambor.png');changeCouleurCercle('#eded28f2')"></li>
+          <li><img src="Media/FordMustangb.png" onclick="imgSlider('Media/FordMustangb.png');changeCouleurCercle('#394de6dd')"></li>
+          <li><img src="Media/kia.png" onclick="imgSlider('Media/kia.png');changeCouleurCercle('#f43839')"></li>
+          <li><img src="Media/AudiSUV.png" onclick="imgSlider('Media/AudiSUV.png');changeCouleurCercle('#858282c6')"></li>
+      </ul>
+      <ul class="reseau">
+        <li><a href="https://www.facebook.com"><img src="Media/facebook.png" alt=""></a></li>
+        <li><a href="https://www.instagram.com"><img src="Media/instagram.png" alt=""></a></li>
+        <li><a href="https://www.youtube.com"><img src="Media/youtube.png" alt=""></a></li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Lambor').src = anything;            
+        }
+        function changeCouleurCercle(color){
+            const cercle = document.querySelector('.cercle');
+            cercle.style.background = color;
+        }
+
+
+
+    </script>    
+  </body>
+</html>
